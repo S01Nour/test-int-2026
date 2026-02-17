@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Echo Bot Web Chat</title>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+  </head>
+  <body>
+    <div id="webchat" role="main" style="height: 500px; width: 100%;"></div>
+    <script>
+      const styleOptions = { hideUploadButton: true };
+      window.WebChat.renderWebChat(
+        {
+          directLine: window.WebChat.createDirectLine({ secret: 'Dhx7x1c8AYiCjGTYl3mfaZchAuSWv5G2pXYc5CHVOM2jVKHSxI8RJQQJ99CBAC24pbEAArohAAABAZBSc8wt.4t8FTKrXHPSluctyF9od8zzRW5gJQXsiBOT4ZcDOXiPUbzNkFv00JQQJ99CBAC24pbEAArohAAABAZBS3Y56' }),
+          styleOptions
+        },
+        document.getElementById('webchat')
+      );
+    </script>
+  </body>
+</html>
